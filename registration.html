@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="registration.css"> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!--First we have to create Registration form-->
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validation()">
+               <h2>Register</h2> 
+               <p id="result">head</p>
+               <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="Username" placeholder="Username">
+               </div>
+               <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="Email" placeholder="Email">
+               </div>
+               <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="Password" placeholder="Password">
+               </div>
+               <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="CPassword" placeholder="Confirm Password">
+               </div>
+               <div class="button">
+                 <input type="submit" class="btn" onclick="validation()" value="Register">
+               </div>
+               <div class="group">
+                <span><a href="#">Forget-password</a></span>
+                <span><a href="#">Login</a></span>
+               </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>  
+            <h2>Thank you !!</h2>
+            <p>Your Registration Sucessfully. Thanks</p>
+            <a href="#"><button>OK</button></a>
+        </div>
+    </div>
+    <script src="/regi.js"></script>
+</body>
+</html>
